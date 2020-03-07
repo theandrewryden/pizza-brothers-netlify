@@ -69,9 +69,7 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h1 className="title has-text-light">{mainpitch.title}</h1>
                   </div>
-                  <div className="tile">
-                    <h3 className="subtitle has-text-light">{mainpitch.description}</h3>
-                  </div>
+                    {/* Put locations here*/}
                 </div>
               </div>
             </div>
@@ -129,7 +127,6 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
-          description
         }
       }
     }
