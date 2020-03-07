@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Welcome to Pizza Brothers!
+title: Welcome to Pizza Brothers
 image: /img/pbros-background.jpg
 heading: Order Online
 subheading: We are proud to announce our newest location in Edison!
