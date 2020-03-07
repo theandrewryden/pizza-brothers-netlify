@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import LocationGrid from "../components/Locations";
 
 export const IndexPageTemplate = ({
   image,
@@ -69,7 +70,7 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h1 className="title has-text-light">{mainpitch.title}</h1>
                   </div>
-                    {/* Put locations here*/}
+                    <LocationGrid/>
                 </div>
               </div>
             </div>
