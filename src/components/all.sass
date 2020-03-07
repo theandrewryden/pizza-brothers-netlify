@@ -7,11 +7,18 @@ $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
-$body-color: #333
+$body-color: #fff
 $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active
+  background-color: #000
+  color: #fff
 
 .content .taglist
   list-style: none
@@ -86,11 +93,11 @@ footer.footer
 
 //Menu overrides
 $menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-hover-color: $white-ter !important
+$menu-item-hover-background-color: #000
+$menu-item-active-color: #000
+$menu-item-active-background-color:	$white-ter
+$menu-list-border-left: 1px solid $black
 $menu-label-color: $white-ter
 
 
