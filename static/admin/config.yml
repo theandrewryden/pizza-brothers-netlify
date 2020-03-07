@@ -24,3 +24,9 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}]}
+  - name: "locations"
+    label: "Locations"
+    folder: "locations"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
