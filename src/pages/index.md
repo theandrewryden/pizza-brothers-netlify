@@ -5,7 +5,7 @@ image: /img/pbros-background.jpg
 heading: Order Online
 subheading: We are proud to announce our newest location in Edison!
 mainpitch:
-  title: Locations
+  title: Choose a Location to begin Ordering
   description: >-
     Bedminster, Martinsville, Greenbrook, Raritan, Hillsborough, Scotch Plains,
     Edison
