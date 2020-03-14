@@ -1,3 +1,8 @@
 ---
-title: Bedminster
+title: Locations
 ---
+Bedminster Location
+
+<!--s-->
+
+Martinsville Location
