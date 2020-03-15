@@ -26,7 +26,8 @@ collections:
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}]}
   - name: "locations"
     label: "Locations"
-    folder: "locations"
-    create: true
+    folder: "src/locations"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "location"}
+      - {label: Title, name: title, widget: string}
+      - {label: Body, name: body, widget: locations, separator: "\n\n<!--s-->\n\n"}
