@@ -14,8 +14,9 @@ class LocationGrid extends React.Component {
             <div className="columns is-multiline">
                 {locations &&
                   locations.map(({ node: location }) => (
-                    <div key={location.id} className="column is-6 has-text-centered">
+                    <div key={location.id} className="column has-text-centered">
                         <div style={{display: 'inline-block', width: '100%'}}>
+                            <h2 className="has-text-secondary">{location.frontmatter.title}</h2>
                             <iframe
                                 title={location.frontmatter.title}
                                 src={location.frontmatter.mapEmbedUrl}
@@ -34,7 +35,7 @@ class LocationGrid extends React.Component {
                             display: 'inline-block',
                             width: '100%'
                         }}>
-                            <div className="columns has-text-centered" style={{marginTop: 10}}>
+                            <div className="columns has-text-centered" style={{marginTop: 15, marginBottom: 15}}>
                                 <div className="column is-6">
                                     <CallButton
                                         title={"Call Pizza Brothers of "+location.frontmatter.title}

@@ -16,6 +16,28 @@ $secondary-invert: $pbros-yellow-invert
 $body-color: #fff
 $black: #2b2523
 
+.has-text-primary
+  color: $primary !important
+
+.has-background-secondary
+  background: $secondary !important
+
+.has-text-secondary
+  color: $secondary !important
+
+.has-background-primary
+  background: $primary !important
+
+.promotion
+  background: $secondary
+  color: $primary
+  justify-content: center
+  text-align: center
+  h2
+    color: $primary
+    margin-bottom: 0
+    font-size: 1.5rem
+
 .button
   padding: 20px
   width: 100%
@@ -45,6 +67,12 @@ $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
+
+.navbar > .container
+  justify-content: center
+
+.navbar-brand .navbar-item > img
+  max-height: none
 
 a.navbar-item:focus,
 a.navbar-item:focus-within,

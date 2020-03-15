@@ -56,15 +56,16 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
+    <div className="tile promotion" style={{paddingTop: 10, paddingBottom: 10}}>
+      <h2 className="title">{mainpitch.title}</h2>
+    </div>
     <section className="has-background-black has-text-centered" style={{padding: 15}}>
       <div className="container">
         <div>
           <div className="columns">
             <div className="column is-12">
               <div className="content">
-                  <div className="tile">
-                      <h1 className="title has-text-light">{mainpitch.title}</h1>
-                  </div>
+                  <h2 className="has-text-light margin-top-0" style={{borderBottom: "1px solid grey", marginBottom: 30, padding: 15, fontSize: "2.5rem"}}>Locations</h2>
                   <LocationGrid/>
               </div>
             </div>
