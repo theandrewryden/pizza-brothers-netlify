@@ -5,9 +5,9 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
-
+import LocationData from "./LocationData";
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+  const { title, description, url, image, locations } = useSiteMetadata()
   return (
     <div>
       <Helmet>
@@ -48,6 +48,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
+      <LocationData title={title} locations={locations} url={url} image={image}/>
       <Navbar />
       <div>{children}</div>
       <Footer />
