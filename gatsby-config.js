@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Pizza Brothers of New Jersey',
-    description:
-      'Pizza Brothers of New Jersey',
+    title: 'Pizza Brothers',
+    titleTemplate: "%s of New Jersey",
+    description: 'Pizza, Pasta, Wings, Salads, Sandwiches, Catering and more. Serving New Jersey communities for over 30 years.',
+    url: "https://www.mypizzabrothers.com",
+    image: "/img/icon.png"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
