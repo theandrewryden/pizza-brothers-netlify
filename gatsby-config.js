@@ -8,6 +8,18 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: "Pizza Brothers of New Jersey",
+        short_name: "Pizza Brothers",
+        start_url: "/",
+        background_color: "#FF0000",
+        theme_color: "#FF0000",
+        display: "standalone",
+        icon: "src/images/icon.png"
+      }
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
