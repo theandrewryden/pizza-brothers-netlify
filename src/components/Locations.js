@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {StaticQuery} from "gatsby";
 import { graphql } from "gatsby";
+import PrimaryButton from "./PrimaryButton"
+import CallButton from "./CallButton";
 
 class LocationGrid extends React.Component {
     render() {
@@ -17,7 +19,7 @@ class LocationGrid extends React.Component {
                             <iframe
                                 title={location.frontmatter.title}
                                 src={location.frontmatter.mapEmbedUrl}
-                                width={400}
+                                width={"100%"}
                                 height={300}
                                 marginWidth={0}
                                 marginHeight={0}
@@ -32,19 +34,19 @@ class LocationGrid extends React.Component {
                             display: 'inline-block',
                             width: '100%'
                         }}>
-                            <div className="actions has-text-centered">
-                                <button
-                                    style={{
-                                        padding: 20,
-                                        width: 200,
-                                        fontSize: '1rem',
-                                        background: 'green',
-                                        color: 'white'
-                                    }}
-                                    title="Order Online"
-                                    onClick={() => { window.location.href = location.frontmatter.onlineOrderingUrl }}>
-                                    Order Online
-                                </button>
+                            <div className="columns has-text-centered" style={{marginTop: 10}}>
+                                <div className="column is-6">
+                                    <CallButton
+                                        title={"Call Pizza Brothers of "+location.frontmatter.title}
+                                        phoneNumber={location.frontmatter.phone}
+                                    />
+                                </div>
+                                <div className="column is-6">
+                                    <PrimaryButton
+                                        title="Order Online"
+                                        url={location.frontmatter.onlineOrderingUrl}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

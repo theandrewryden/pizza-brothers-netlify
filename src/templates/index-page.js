@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import LocationGrid from "../components/Locations";
@@ -33,10 +33,8 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-center has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-centered has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgba(0, 0, 0, 0.5) 0.5rem 0px 0px, rgba(0, 0, 0, 0.5) -0.5rem 0px 0px',
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
             color: 'white',
             lineHeight: '1',
@@ -46,10 +44,8 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
         <h3
-          className="has-text-center has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-text-centered has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-                'rgba(0, 0, 0, 0.5) 0.5rem 0px 0px, rgba(0, 0, 0, 0.5) -0.5rem 0px 0px',
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
             color: 'white',
             lineHeight: '1',
@@ -60,9 +56,9 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <section className="section section--gradient has-background-black">
+    <section className="has-background-black has-text-centered" style={{padding: 15}}>
       <div className="container">
-        <div className="section">
+        <div>
           <div className="columns">
             <div className="column is-12">
               <div className="content">

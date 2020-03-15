@@ -1,14 +1,47 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+// Pizza brothers logo brand color: #FFFF00
+$pbros-yellow: #FFFF00
+$pbros-yellow-invert: #000
+$pbros-red: #FF0000
+$pbros-red-invert: #fff
+$pbros-green: #5cb85c
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+
+$primary: $pbros-red
+$primary-invert: $pbros-yellow
+$secondary: $pbros-yellow
+$secondary-invert: $pbros-yellow-invert
 $body-color: #fff
 $black: #2b2523
+
+.button
+  padding: 20px
+  width: 100%
+  font-size: 1rem
+  font-weight: bold
+  line-height: 0
+
+.button svg
+  margin: 0 5px
+
+.button.primary
+  background: $primary
+  color: $primary-invert
+
+.button.order-online
+  background: $pbros-green
+  color: white
+
+.button.call
+  background: $secondary
+  color: $secondary-invert
+
+.button.call .phone-number
+  margin: 0 5px
+  font-size: 0.9rem
+  font-weight: normal
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -113,13 +146,5 @@ $menu-label-color: $white-ter
 
 // responsiveness
 +tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
 
 +mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
