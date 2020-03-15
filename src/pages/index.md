@@ -3,9 +3,9 @@ heading: Order Online
 templateKey: index-page
 title: Welcome to Pizza Brothers
 image: /img/pbros-background.jpg
-subheading: We are proud to announce our newest location in Edison!
+subheading: Pizza | Pasta | Wings | Salads | Sandwiches
 mainpitch:
-  title: 'Pizza, Pasta, Wings, Salads, Sandwiches'
+  title: We are proud to announce our newest location in Edison!
   description: >-
     Bedminster, Martinsville, Greenbrook, Raritan, Hillsborough, Scotch Plains,
     Edison
