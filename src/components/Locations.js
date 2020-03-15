@@ -23,7 +23,7 @@ class LocationGrid extends React.Component {
                                 >
                                 </div>
                             </div>
-                            <p>{location.title}</p>
+                            <p>{location.frontmatter.title}</p>
                         </section>
                     </div>
                 ))}
@@ -43,13 +43,14 @@ LocationGrid.propTypes = {
 export default () => (
     <StaticQuery query={graphql`
         query LocationQuery {
-            allMarkdownRemark {
+            allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "location"}}}) {
                 edges {
                     node {
-                        id
-                        frontmatter {
-                            title
-                        }
+                      id
+                      html
+                      frontmatter {
+                        title
+                      }
                     }
                 }
             }
