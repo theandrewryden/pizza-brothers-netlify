@@ -19,6 +19,7 @@ module.exports = {
         icon: "src/images/icon.png"
       }
     },
+    'gatsby-plugin-offline',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
