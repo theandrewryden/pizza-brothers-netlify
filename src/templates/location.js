@@ -82,6 +82,8 @@ export const pageQuery = graphql`
         title
         address
         phone
+        mapEmbedUrl
+        onlineOrderingUrl
       }
     }
   }

@@ -64,14 +64,12 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-12">
               <div className="content">
-                <div className="content">
                   <div className="tile">
-                    <h1 className="title has-text-light">{mainpitch.title}</h1>
+                      <h1 className="title has-text-light">{mainpitch.title}</h1>
                   </div>
-                    <LocationGrid/>
-                </div>
+                  <LocationGrid/>
               </div>
             </div>
           </div>
