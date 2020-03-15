@@ -14,16 +14,22 @@ class LocationGrid extends React.Component {
                   locations.map(({ node: location }) => (
                     <div key={location.id} className="column is-6">
                         <section className="section">
-                            <div className="has-text-centered">
+                            <div className="has-text-centered location">
                                 <div
                                     style={{
                                         width: '240px',
                                         display: 'inline-block',
                                     }}
                                 >
+                                    <div className="location-title">
+                                        <h2 className="has-text-light">{location.frontmatter.title}</h2>
+                                    </div>
+                                    <div className="details">
+                                        <p className="has-text-light location-address">{location.frontmatter.address}</p>
+                                        <p className="has-text-light location-phone">{location.frontmatter.phone}</p>
+                                    </div>
                                 </div>
                             </div>
-                            <p>{location.frontmatter.title}</p>
                         </section>
                     </div>
                 ))}
@@ -47,9 +53,10 @@ export default () => (
                 edges {
                     node {
                       id
-                      html
                       frontmatter {
                         title
+                        address
+                        phone
                       }
                     }
                 }

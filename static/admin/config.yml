@@ -27,7 +27,9 @@ collections:
   - name: "locations"
     label: "Locations"
     folder: "src/locations"
+    create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "location"}
       - {label: Title, name: title, widget: string}
-      - {label: Body, name: body, widget: locations, separator: "\n\n<!--s-->\n\n"}
+      - {label: Address, name: address, widget: string}
+      - {label: Phone, name: phone, widget: string}

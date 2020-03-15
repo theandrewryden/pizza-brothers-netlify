@@ -1,17 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const LocationTemplate = ({
-                                     content,
-                                     contentComponent,
                                      title,
                                      helmet,
                                  }) => {
-    const LocationContent = contentComponent || Content
+
 
     return (
         <section className="section">
@@ -22,7 +19,6 @@ export const LocationTemplate = ({
                         <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                             {title}
                         </h1>
-                        <LocationContent content={content} />
                     </div>
                 </div>
             </div>
