@@ -26,7 +26,7 @@ collections:
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}]}
   - name: "locations"
     label: "Locations"
-    folder: "src/locations"
+    folder: "src/pages/locations"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "location"}

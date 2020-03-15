@@ -1,21 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { LocationTemplate } from '../../templates/location'
+import Locations from "../../components/Locations";
 
-const LocationPreview = ({ entry, widgetFor }) => {
+export default () => {
     return (
-        <LocationTemplate
-            content={widgetFor('body')}
-            title={entry.getIn(['data', 'title'])}
-        />
+        <Locations/>
     )
 }
-
-LocationPreview.propTypes = {
-    entry: PropTypes.shape({
-        getIn: PropTypes.func,
-    }),
-    widgetFor: PropTypes.func,
-}
-
-export default LocationPreview
