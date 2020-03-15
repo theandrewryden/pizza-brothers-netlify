@@ -3,27 +3,37 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 
 export const LocationTemplate = ({
-                                     content,
-                                     contentComponent,
                                      title,
+                                     address,
+                                     phone,
                                      helmet,
                                  }) => {
-    const LocationContent = contentComponent || Content
 
     return (
         <section className="section">
             {helmet || ''}
             <div className="container content">
-                <div className="columns">
-                    <div className="column is-10 is-offset-1">
-                        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                            {title}
-                        </h1>
-                        <LocationContent content={content} />
-                    </div>
+                <div className="column is-6">
+                    <section className="section">
+                        <div className="has-text-centered location">
+                            <div
+                                style={{
+                                    width: '240px',
+                                    display: 'inline-block',
+                                }}
+                            >
+                                <div className="location-title">
+                                    <h2 className="has-text-light">{title}</h2>
+                                </div>
+                                <div className="details">
+                                    <p className="has-text-light location-address">{address}</p>
+                                    <p className="has-text-light location-phone">{phone}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -31,9 +41,9 @@ export const LocationTemplate = ({
 }
 
 LocationTemplate.propTypes = {
-    content: PropTypes.node.isRequired,
-    contentComponent: PropTypes.func,
     title: PropTypes.string,
+    address: PropTypes.string,
+    phone: PropTypes.string,
     helmet: PropTypes.object,
 }
 
@@ -43,14 +53,14 @@ const Location = ({ data }) => {
     return (
         <Layout>
             <LocationTemplate
-                content={location.html}
-                contentComponent={HTMLContent}
+                title={location.frontmatter.title}
+                address={location.frontmatter.address}
+                phone={location.frontmatter.phone}
                 helmet={
                     <Helmet titleTemplate="%s | Location">
                         <title>{`${location.frontmatter.title}`}</title>
                     </Helmet>
                 }
-                title={location.frontmatter.title}
             />
         </Layout>
     )
@@ -68,9 +78,10 @@ export const pageQuery = graphql`
   query LocationByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
-      html
       frontmatter {
         title
+        address
+        phone
       }
     }
   }
