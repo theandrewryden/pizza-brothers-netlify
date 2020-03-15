@@ -17,8 +17,7 @@ const Footer = class extends React.Component {
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-12 social">
+            <div className="social">
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -42,7 +41,6 @@ const Footer = class extends React.Component {
                   />
                 </a>
               </div>
-            </div>
           </div>
         </div>
       </footer>
