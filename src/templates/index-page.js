@@ -4,6 +4,7 @@ import {graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
 import LocationGrid from "../components/Locations";
+import StyledBackgroundSection from "../components/BackgroundSection";
 
 export const IndexPageTemplate = ({
                                     image,
@@ -12,15 +13,10 @@ export const IndexPageTemplate = ({
                                     mainpitch
                                   }) => (
   <div>
-    <div
+    <StyledBackgroundSection
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        minHeight: '600px',
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        minHeight: '600px'
       }}
     >
       <div className="title-wrapper">
@@ -60,19 +56,14 @@ export const IndexPageTemplate = ({
           PLEASE CHOOSE A LOCATION
         </div>
       </div>
-    </div>
+    </StyledBackgroundSection>
     <div className="tile promotion" style={{paddingTop: 10, paddingBottom: 10, display: 'none'}}>
       <h2 className="title">{mainpitch.title}</h2>
     </div>
-    <section className="main-section has-text-centered"
+    <StyledBackgroundSection className="main-section has-text-centered"
              style={{
                padding: 15,
-               backgroundImage: `url(${
-                 !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-               })`,
-               minHeight: '600px',
-               backgroundPosition: `top left`,
-               backgroundAttachment: `fixed`,
+               minHeight: '600px'
              }}
 
     >
@@ -87,7 +78,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </StyledBackgroundSection>
   </div>
 )
 
