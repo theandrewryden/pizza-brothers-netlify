@@ -78,7 +78,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  subheading: PropTypes.string,
+  subheading: PropTypes.object,
   mainpitch: PropTypes.object
 }
 
