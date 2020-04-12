@@ -23,6 +23,7 @@ export const IndexPageTemplate = ({
       }}
     >
       <div
+        className="page-title"
         style={{
           display: 'flex',
           height: '150px',
@@ -35,8 +36,6 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-centered has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            color: 'white',
             lineHeight: '1',
             padding: '0.25em',
           }}
@@ -46,8 +45,6 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-centered has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            color: 'white',
             lineHeight: '1',
             padding: '0.25em',
           }}
