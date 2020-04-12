@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Pizza Brothers',
+    title: 'Pizza Brothers of New Jersey',
     titleTemplate: "%s of New Jersey",
     description: 'Pizza, Pasta, Wings, Salads, Sandwiches, Catering and more. Serving New Jersey communities for over 30 years.',
     url: "https://www.mypizzabrothers.com",
-    image: "/img/icon.png"
+    image: "/img/2020pbroslogo_SVG.svg"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,7 +18,7 @@ module.exports = {
         background_color: "#FF0000",
         theme_color: "#FF0000",
         display: "standalone",
-        icon: "src/img/icon.png"
+        icon: "src/img/2020pbroslogo_SVG.svg"
       }
     },
     'gatsby-plugin-offline',
