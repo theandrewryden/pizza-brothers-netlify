@@ -15,27 +15,22 @@ $body-color: #fff
 $black: $pbros-black
 
 //Typography
-@font-face
-  font-family: "Acumin Variable Concept"
-  src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot")
-  src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff") format("woff"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.svg#Acumin Variable Concept") format("svg")
-
-$font-primary: "Acumin Variable Concept", "sans-serif"
+$font-primary: "acumin-pro", "sans-serif"
 $font-header: 40pt
 $font-medium: 24pt
 $font-regular: 18pt
 
-.font-heading
+@mixin font-heading
   font-family: $font-primary
   font-size: $font-header
   font-weight: bold
 
-.font-large
+@mixin font-large
   font-family: $font-primary
   font-size: $font-medium
   font-weight: 500
 
-.font-regular
+@mixin font-regular
   font-family: $font-primary
   font-size: $font-regular
   font-weight: 500
@@ -128,7 +123,10 @@ $font-regular: 18pt
   @include text-box-large()
   h1
     color: $pbros-black
+    @include font-heading()
   h3
     color: $pbros-red
+    @include font-large()
   p
     color: $pbros-black
+    @include font-regular()

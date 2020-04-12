@@ -34,7 +34,7 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-centered has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-centered has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen font-heading"
           style={{
             lineHeight: '1',
             padding: '0.25em',
@@ -43,13 +43,13 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
         <h3
-          className="has-text-centered has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-text-centered has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen font-large"
           style={{
             lineHeight: '1',
             padding: '0.25em',
           }}
         >
-          {subheading}
+            <p className="font-regular">{subheading}</p>
         </h3>
       </div>
     </div>
