@@ -4,9 +4,24 @@ templateKey: index-page
 title: Welcome to Pizza Brothers
 image: /img/pbros-background.jpg
 subheading:
-  subtitle: Test
-  body: Test
-  link: www.google.com
+  subtitle: '**ATTENTION**'
+  body: >-
+    ALL PIZZA BROTHERS LOCATIONS WILL REMAIN OPEN FOR DELIVERY AND TAKEOUT
+    DURING THESE DIFFICULT TIMES!
+
+
+    WE ARE PRACTICING SOCIAL DISTANCING GUIDELINES TO KEEP OUR STUFF AND
+    CUSTOMERS SAFE.
+
+
+    PLEASE SUPPORT US AS SAFELY AS POSSIBLE!
+
+
+    THANK YOU!
+
+
+    FOR MORE INFO
+  link: www.covid19.nj.gov
 mainpitch:
   title: We are proud to announce our newest location in Edison!
   description: >-
