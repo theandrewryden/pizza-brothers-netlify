@@ -48,6 +48,7 @@ $font-regular: 18pt
   max-width: 315pt
   border-radius: 10pt
   box-shadow: 0 2pt 2pt #000
+  background: rgba(200, 200, 200, 0.8)
 
 .button
   padding: 20px
@@ -88,7 +89,7 @@ $font-regular: 18pt
   border-radius: 10pt
   box-shadow: 0 2pt 2pt #000
   background-color: $pbros-green
-  color: $pbros-black
+  color: white
   border: none
 
 .button-green:hover
@@ -119,10 +120,16 @@ $font-regular: 18pt
   position: absolute
   width: 100%
 
+.full-width-image
+  padding: 100px 10px 10px 10px
+  justify-content: center
+  height: auto
+
 .page-title
   @include text-box-large()
-  max-width: 600px
   text-align: center
+  margin-bottom: 20px
+  margin-top: 80px
   h1
     color: $pbros-black
     @include font-heading()
@@ -135,3 +142,46 @@ $font-regular: 18pt
     @include font-regular()
     font-size: 16px
     font-weight: bold
+  a, a:visited, a:hover, a:focus, a:active
+    color: $pbros-red
+
+.section-header
+  margin: 0 auto
+  @include text-box-small()
+  background: white
+  text-align: center
+  width: 100%
+  padding: 10px
+  justify-content: center
+  flex-basis: 100%
+  color: $pbros-black
+  font-weight: bold
+
+.location-block
+  padding: 20px
+  background: rgba(0, 0, 0, 0.6)
+  border-radius: 20pt
+  text-align: center
+  margin: 10px
+  h2
+    @include text-box-small()
+    background: white
+    color: $pbros-black !important
+    padding: 10px
+
+.footer
+  background-color: $pbros-red
+  padding: 3rem 0 0
+
+.social
+  padding: 2em
+  background-color: $pbros-red
+.social a
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: $white-ter
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline

@@ -80,9 +80,6 @@ a.navbar-item.is-active
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
-footer.footer
-  padding: 3rem 0 0
-  background-color: transparent
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -100,24 +97,15 @@ $menu-label-color: $white-ter
 .menu-list
   list-style: none !important
   text-align: left
-.social
-  padding: 2em
-.social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
-
 
 @import "~bulma"
 
 @import "pizza-brothers"
 
 // responsiveness
-+tablet-only
-
++tablet
+  .page-title
+    margin-top: 0
 +mobile
+  .page-title
+    margin-top: 0
