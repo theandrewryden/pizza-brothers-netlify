@@ -51,7 +51,12 @@ export const IndexPageTemplate = ({
         >
             {subheading.subtitle}
             <p>{subheading.content}</p>
-            <a href={subheading.link} target={"_blank"} title={subheading.link}>{subheading.link}</a>
+            <a
+                href={subheading.link}
+                target={"_blank"}
+                title={subheading.link}
+                rel={"noopener noreferrer"}
+            >{subheading.link}</a>
         </h3>
       </div>
     </div>
