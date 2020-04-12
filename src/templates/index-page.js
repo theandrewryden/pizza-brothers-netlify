@@ -49,7 +49,9 @@ export const IndexPageTemplate = ({
             padding: '0.25em',
           }}
         >
-            <p className="font-regular">{subheading}</p>
+            {subheading.subtitle}
+            <p>{subheading.content}</p>
+            <a href={subheading.link} target={"_blank"} title={subheading.link}>{subheading.link}</a>
         </h3>
       </div>
     </div>
@@ -117,7 +119,11 @@ export const pageQuery = graphql`
             }
           }
         }
-        subheading
+        subheading {
+          subtitle
+          content
+          link
+        }
         mainpitch {
           title
         }
