@@ -64,7 +64,7 @@ export const IndexPageTemplate = ({
     <div className="tile promotion" style={{paddingTop: 10, paddingBottom: 10, display: 'none'}}>
       <h2 className="title">{mainpitch.title}</h2>
     </div>
-    <section className="has-background-transparent has-text-centered"
+    <section className="main-section has-text-centered"
              style={{
                padding: 15,
                backgroundImage: `url(${
