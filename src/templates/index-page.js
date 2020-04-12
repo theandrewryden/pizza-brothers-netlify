@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
+        minHeight: '500px',
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}
@@ -26,7 +27,6 @@ export const IndexPageTemplate = ({
         className="page-title"
         style={{
           display: 'flex',
-          height: '150px',
           lineHeight: '1',
           justifyContent: 'space-around',
           alignItems: 'center',
@@ -50,14 +50,18 @@ export const IndexPageTemplate = ({
           }}
         >
             {subheading.subtitle}
-            <p>{subheading.body}</p>
-            <a
-                href={subheading.link}
-                target={"_blank"}
-                title={subheading.link}
-                rel={"noopener noreferrer"}
-            >{subheading.link}</a>
         </h3>
+          <p>ALL PIZZA BROTHERS LOCATIONS WILL REMAIN OPEN FOR DELIVERY AND TAKEOUT DURING THESE DIFFICULT TIMES!</p>
+          <p>WE ARE PRACTICING SOCIAL DISTANCING GUIDELINES TO KEEP OUR STUFF AND CUSTOMERS SAFE. PLEASE SUPPORT US AS SAFELY AS POSSIBLE!</p>
+          <p>PLEASE SUPPORT US AS SAFELY AS POSSIBLE!</p>
+          <p>THANK YOU!</p>
+          <p>FOR MORE INFO</p>
+          <a
+              href={subheading.link}
+              target={"_blank"}
+              title={subheading.link}
+              rel={"noopener noreferrer"}
+          >{subheading.link}</a>
       </div>
     </div>
     <div className="tile promotion" style={{paddingTop: 10, paddingBottom: 10}}>

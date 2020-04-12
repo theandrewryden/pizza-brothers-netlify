@@ -36,16 +36,16 @@ $font-regular: 18pt
   font-weight: 500
 
 @mixin text-box-large
-  height: 100pt
+  min-height: 100pt
   max-width: 700pt
   padding: 10pt
   border-radius: 20pt
   box-shadow: 0 2pt 2pt #000
   background: rgba(200, 200, 200, 0.8)
 
-.text-box-small
-  height: 45pt
-  width: 315pt
+@mixin text-box-small
+  max-height: 45pt
+  max-width: 315pt
   border-radius: 10pt
   box-shadow: 0 2pt 2pt #000
 
@@ -121,6 +121,8 @@ $font-regular: 18pt
 
 .page-title
   @include text-box-large()
+  max-width: 600px
+  text-align: center
   h1
     color: $pbros-black
     @include font-heading()
@@ -129,4 +131,7 @@ $font-regular: 18pt
     @include font-large()
   p
     color: $pbros-black
+    padding: 10px
     @include font-regular()
+    font-size: 16px
+    font-weight: bold
