@@ -2,7 +2,7 @@
 heading: Order Online
 templateKey: index-page
 title: Welcome to Pizza Brothers
-image: /img/pbros-background.jpg
+image: /img/pbrosbackgroundimg01.png
 subheading:
   subtitle: '****ATTENTION****'
   body: >-
