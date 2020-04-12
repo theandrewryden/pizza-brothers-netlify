@@ -50,7 +50,7 @@ export const IndexPageTemplate = ({
           }}
         >
             {subheading.subtitle}
-            <p>{subheading.content}</p>
+            <p>{subheading.body}</p>
             <a
                 href={subheading.link}
                 target={"_blank"}
@@ -126,7 +126,7 @@ export const pageQuery = graphql`
         }
         subheading {
           subtitle
-          content
+          body
           link
         }
         mainpitch {

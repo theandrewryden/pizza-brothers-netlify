@@ -5,7 +5,7 @@ title: Welcome to Pizza Brothers
 image: /img/pbros-background.jpg
 subheading:
   subtitle: Test
-  content: Test
+  body: Test
   link: www.google.com
 mainpitch:
   title: We are proud to announce our newest location in Edison!
