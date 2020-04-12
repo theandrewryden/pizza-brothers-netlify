@@ -16,7 +16,7 @@ subheading:
     \
     FOR MORE INFO \
     
-link: www.covid19.nj.gov  
+  link: www.covid19.nj.gov  
 mainpitch:
   title: We are proud to announce our newest location in Edison!
   description: >-
