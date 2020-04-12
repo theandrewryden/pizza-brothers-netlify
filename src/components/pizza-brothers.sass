@@ -40,11 +40,13 @@ $font-regular: 18pt
   font-size: $font-regular
   font-weight: 500
 
-.text-box-large
+@mixin text-box-large
   height: 100pt
-  width: 700pt
+  max-width: 700pt
+  padding: 10pt
   border-radius: 20pt
   box-shadow: 0 2pt 2pt #000
+  background: rgba(200, 200, 200, 0.8)
 
 .text-box-small
   height: 45pt
@@ -115,3 +117,18 @@ $font-regular: 18pt
     color: $primary
     margin-bottom: 0
     font-size: 1.5rem
+
+//Custom Styles
+.navbar
+  background: transparent
+  position: absolute
+  width: 100%
+
+.page-title
+  @include text-box-large()
+  h1
+    color: $pbros-black
+  h3
+    color: $pbros-red
+  p
+    color: $pbros-black
