@@ -1,0 +1,117 @@
+// Config vars
+// Pizza brothers logo brand color: #FFFF00
+$pbros-yellow: #FFE401
+$pbros-yellow-invert: #000
+$pbros-red: #D00000
+$pbros-red-invert: #fff
+$pbros-green: #13A76B
+$pbros-black: #272727
+
+$primary: $pbros-red
+$primary-invert: $pbros-yellow
+$secondary: $pbros-yellow
+$secondary-invert: $pbros-yellow-invert
+$body-color: #fff
+$black: $pbros-black
+
+//Typography
+@font-face
+  font-family: "Acumin Variable Concept"
+  src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot")
+  src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff") format("woff"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.svg#Acumin Variable Concept") format("svg")
+
+$font-primary: "Acumin Variable Concept", "sans-serif"
+$font-header: 40pt
+$font-medium: 24pt
+$font-regular: 18pt
+
+.font-heading
+  font-family: $font-primary
+  font-size: $font-header
+  font-weight: bold
+
+.font-large
+  font-family: $font-primary
+  font-size: $font-medium
+  font-weight: 500
+
+.font-regular
+  font-family: $font-primary
+  font-size: $font-regular
+  font-weight: 500
+
+.text-box-large
+  height: 100pt
+  width: 700pt
+  border-radius: 20pt
+  box-shadow: 0 2pt 2pt #000
+
+.text-box-small
+  height: 45pt
+  width: 315pt
+  border-radius: 10pt
+  box-shadow: 0 2pt 2pt #000
+
+.button
+  padding: 20px
+  width: 100%
+  font-size: 1rem
+  font-weight: bold
+  line-height: 0
+
+.button svg
+  margin: 0 5px
+
+.button .phone-number
+  margin: 0 5px
+  font-size: 0.9rem
+  font-weight: normal
+
+.button.primary
+  background: $primary
+  color: $primary-invert
+
+.button-yellow
+  height: 45pt
+  width: 100%
+  max-width: 600pt
+  border-radius: 10pt
+  box-shadow: 0 2pt 2pt #000
+  background-color: $pbros-yellow
+  color: $pbros-black
+  border: none
+
+.button-yellow:hover
+  background-color: white
+
+.button-green
+  height: 45pt
+  width: 100%
+  max-width: 600pt
+  border-radius: 10pt
+  box-shadow: 0 2pt 2pt #000
+  background-color: $pbros-green
+  color: $pbros-black
+  border: none
+
+.button-green:hover
+  background-color: white
+
+.has-background-secondary
+  background: $secondary !important
+
+.has-text-secondary
+  color: $secondary !important
+
+.has-background-primary
+  background: $primary !important
+
+.promotion
+  background: $secondary
+  color: $primary
+  justify-content: center
+  text-align: center
+  h2
+    color: $primary
+    margin-bottom: 0
+    font-size: 1.5rem

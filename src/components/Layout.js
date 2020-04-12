@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <link href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept" rel="stylesheet" type="text/css"/>
         <link
           rel="apple-touch-icon"
           sizes="180x180"

@@ -19,7 +19,7 @@ const CallButton = class extends PrimaryButton {
                 href={'tel:'+formatPhoneNumber(this.props.phoneNumber)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button call"
+                className="button button-yellow"
                 title={this.props.title}
             >
                 <FaPhone/> Call Now: <span className="phone-number">{this.props.phoneNumber}</span>

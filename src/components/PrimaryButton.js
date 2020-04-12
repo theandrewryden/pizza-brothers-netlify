@@ -4,7 +4,7 @@ const PrimaryButton = class extends React.Component {
     render() {
         return (
             <button
-                className="button order-online"
+                className="button button-green"
                 title={this.props.title}
                 onClick={() => {
                     if (this.props.url) {
