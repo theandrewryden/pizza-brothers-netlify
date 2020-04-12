@@ -3,7 +3,28 @@ heading: Order Online
 templateKey: index-page
 title: Welcome to Pizza Brothers
 image: /img/pbros-background.jpg
-subheading: Pizza | Pasta | Wings | Salads | Sandwiches
+subheading: >-
+  ### \*\*ATTENTION!\*\*
+
+
+  ALL PIZZA BROTHERS LOCATIONS WILL REMAIN OPEN FOR DELIVERY AND TAKEOUT DURING
+  THESE DIFFICULT TIMES!
+
+
+  WE ARE PRACTICING SOCIAL DISTANCING GUIDELINES TO KEEP OUR STAFF AND CUSTOMERS
+  SAGE.
+
+
+  PLEASE SUPPORT US AS SAFELY AS POSSIBLE!
+
+
+  THANK YOU!
+
+
+  FOR MORE INFO
+
+
+  ### www.covid19.nj.gov
 mainpitch:
   title: We are proud to announce our newest location in Edison!
   description: >-
