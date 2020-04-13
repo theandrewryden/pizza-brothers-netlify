@@ -23,7 +23,7 @@ subheading:
     FOR MORE INFO
   link: www.covid19.nj.gov
 mainpitch:
-  title: We are proud to announce our newest location in Edison!
+  title: We are open for takeout and delivery during the covid19 stay at home order.
   description: >-
     Bedminster, Martinsville, Greenbrook, Raritan, Hillsborough, Scotch Plains,
     Edison
