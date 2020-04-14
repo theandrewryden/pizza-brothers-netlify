@@ -21,7 +21,7 @@ subheading:
 
 
     FOR MORE INFO
-  link: www.covid19.nj.gov
+  link: https://www.covid19.nj.gov
 mainpitch:
   title: We are open for takeout and delivery during the covid19 stay at home order.
   description: >-
