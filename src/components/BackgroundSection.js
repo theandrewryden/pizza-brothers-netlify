@@ -6,7 +6,7 @@ import styled from "styled-components";
 const BackgroundSection = ({ className, children }) => (
   <StaticQuery query={graphql`
     query {
-      desktop: file(relativePath: { eq: "pbrosbackgroundimg01.png" }) {
+      desktop: file(relativePath: { eq: "PbrosBackgroundImg01.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
