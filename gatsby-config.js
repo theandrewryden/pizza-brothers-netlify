@@ -21,6 +21,14 @@ module.exports = {
         icon: "src/img/2020Pbros_AppIcon.svg"
       }
     },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-548SK8R',
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' },
+      }
+    },
     'gatsby-plugin-offline',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
