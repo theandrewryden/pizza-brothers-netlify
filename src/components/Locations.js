@@ -10,10 +10,17 @@ class LocationGrid extends React.Component {
         const { data } = this.props
         const { edges: locations } = data.allMarkdownRemark
 
+        const sortedLocations = locations.slice.sort((a, b) => {
+            if (a.frontmatter.title === "Martinsville") {
+                return 1;
+            }
+            return 0;
+        });
+
         return (
             <div className="columns is-multiline">
-                {locations &&
-                  locations.map(({ node: location }) => (
+                {sortedLocations &&
+                  sortedLocations.map(({ node: location }) => (
                     <div key={location.id} className="location-block column has-text-centered">
                         <div style={{display: 'inline-block', width: '100%'}}>
                             <h2 className="has-text-secondary">{location.frontmatter.title}</h2>
