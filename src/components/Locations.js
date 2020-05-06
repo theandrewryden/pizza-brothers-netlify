@@ -14,7 +14,7 @@ class LocationGrid extends React.Component {
             if (a.node.frontmatter.title === "Martinsville") {
                 return -1;
             } else {
-                return a > b;
+                return a.id > b.id;
             }
         });
 
