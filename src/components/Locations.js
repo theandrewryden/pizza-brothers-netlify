@@ -10,20 +10,10 @@ class LocationGrid extends React.Component {
         const { data } = this.props
         const { edges: locations } = data.allMarkdownRemark
 
-        const sortedLocations = { ...locations };
-        sortedLocations.sort((a, b) => {
-            return parseInt(a.node.frontmatter.sortOrder)
-              < parseInt(b.node.frontmatter.sortOrder)
-              ? -1
-              : 0;
-        });
-
-        console.log(sortedLocations);
-
         return (
             <div className="columns is-multiline">
-                {sortedLocations &&
-                  sortedLocations.map(({ node: location }) => (
+                {locations &&
+                  locations.map(({ node: location }) => (
                     <div key={location.id} className="location-block column has-text-centered">
                         <div style={{display: 'inline-block', width: '100%'}}>
                             <h2 className="has-text-secondary">{location.frontmatter.title}</h2>
@@ -78,7 +68,7 @@ LocationGrid.propTypes = {
 export default () => (
     <StaticQuery query={graphql`
         query LocationQuery {
-            allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "location"}}}, sort: {fields: frontmatter___title, order: ASC}) {
+            allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "location"}}}, sort: {fields: frontmatter___sortOrder, order: ASC}) {
                 edges {
                     node {
                       id
