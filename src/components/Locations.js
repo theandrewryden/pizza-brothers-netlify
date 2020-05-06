@@ -11,11 +11,7 @@ class LocationGrid extends React.Component {
         const { edges: locations } = data.allMarkdownRemark
 
         const sortedLocations = locations.slice().sort((a, b) => {
-            if (a.node.frontmatter.title === "Martinsville") {
-                return -1;
-            } else {
-                return a.id > b.id;
-            }
+            return a.node.frontmatter.sortOrder < b.node.frontmatter.sortOrder;
         });
 
         return (

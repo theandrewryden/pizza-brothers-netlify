@@ -23,7 +23,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Subheading, name: subheading, widget: object, fields: [{label: Subtitle, name: subtitle, widget: string}, {label: Content, name: body, widget: markdown}, {label: Link, name: link, widget: string}]}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}]}
+          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: number}]}
   - name: "locations"
     label: "Locations"
     folder: "src/pages/locations"
@@ -35,3 +35,4 @@ collections:
       - {label: Phone, name: phone, widget: string}
       - {label: Map Embed URL, name: mapEmbedUrl, widget: string}
       - {label: Online Ordering URL, name: onlineOrderingUrl, widget: string}
+      - {label: Sort Order, name: sortOrder, widget: string}
