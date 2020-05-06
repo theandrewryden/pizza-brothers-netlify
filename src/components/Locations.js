@@ -87,6 +87,7 @@ export default () => (
                         phone
                         mapEmbedUrl
                         onlineOrderingUrl
+                        sortOrder
                       }
                     }
                 }
