@@ -17,6 +17,8 @@ class LocationGrid extends React.Component {
               : 0;
         });
 
+        console.log(sortedLocations);
+
         return (
             <div className="columns is-multiline">
                 {sortedLocations &&
