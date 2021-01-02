@@ -4,8 +4,7 @@ templateKey: index-page
 title: Welcome to Pizza Brothers
 image: /img/PbrosBackgroundImg01.jpg
 subheading:
-  subtitle: "****BEDMINSTER ONLINE ORDERING IS DOWN FOR MAINTENANCE, SORRY! PLEASE
-    CALL AHEAD!****"
+  subtitle: "****ATTENTION!****"
   body: >-
     ALL PIZZA BROTHERS LOCATIONS WILL REMAIN OPEN FOR DELIVERY AND TAKEOUT
     DURING THESE DIFFICULT TIMES!
